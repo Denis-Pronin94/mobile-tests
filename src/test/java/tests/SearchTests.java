@@ -1,6 +1,5 @@
 package tests;
 
-
 import com.codeborne.selenide.CollectionCondition;
 import io.appium.java_client.AppiumBy;
 import org.junit.jupiter.api.Test;
@@ -18,7 +17,7 @@ public class SearchTests extends TestBase {
             $(AppiumBy.id("org.wikipedia.alpha:id/search_src_text")).sendKeys("BrowserStack");
         });
         step("Verify content found", () ->
-        $$(AppiumBy.id("org.wikipedia.alpha:id/page_list_item_title"))
-                .shouldHave(CollectionCondition.sizeGreaterThan(0)));
+                $$(AppiumBy.id("org.wikipedia.alpha:id/page_list_item_title"))
+                        .shouldHave(CollectionCondition.sizeGreaterThan(0)));
     }
 }

@@ -1,6 +1,5 @@
 package tests;
 
-
 import com.codeborne.selenide.CollectionCondition;
 import io.appium.java_client.AppiumBy;
 import org.junit.jupiter.api.Test;
