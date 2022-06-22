@@ -27,6 +27,7 @@ public class LocalMobileDriver implements WebDriverProvider {
         options.setAutomationName(AutomationName.ANDROID_UIAUTOMATOR2);
         options.setPlatformName("Android");
         options.setDeviceName("Pixel 4 API 30");
+        //options.setDeviceName("R58M33TQMQM");
         options.setPlatformVersion("11.0");
         options.setApp(app.getAbsolutePath());
         options.setAppPackage("org.wikipedia.alpha");
