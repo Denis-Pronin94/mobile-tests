@@ -13,12 +13,12 @@ import java.net.URL;
 
 public class BrowserstackMobileDriver implements WebDriverProvider {
     static BrowserstackAndroidConfig config = ConfigFactory.create(BrowserstackAndroidConfig.class);
-    
+
     @Override
     public WebDriver createDriver(Capabilities capabilities) {
         MutableCapabilities mutableCapabilities = new MutableCapabilities();
         mutableCapabilities.merge(capabilities);
-                // Set your access credentials
+        // Set your access credentials
         mutableCapabilities.setCapability("browserstack.user", config.login());
         mutableCapabilities.setCapability("browserstack.key", config.password());
 

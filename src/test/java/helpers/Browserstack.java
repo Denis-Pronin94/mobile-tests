@@ -20,3 +20,4 @@ public class Browserstack {
                 .path("automation_session.video_url");
     }
 }
+
