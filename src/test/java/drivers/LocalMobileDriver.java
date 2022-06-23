@@ -19,7 +19,7 @@ import static org.apache.commons.io.FileUtils.copyInputStreamToFile;
 
 public class LocalMobileDriver implements WebDriverProvider {
     static MobileLocalConfig config = ConfigFactory.create(MobileLocalConfig.class);
-    
+
     @Override
     public WebDriver createDriver(Capabilities capabilities) {
         File app = getApp();
@@ -33,7 +33,6 @@ public class LocalMobileDriver implements WebDriverProvider {
         options.setApp(app.getAbsolutePath());
         options.setAppPackage("org.wikipedia.alpha");
         options.setAppActivity("org.wikipedia.main.MainActivity");
-
 
         return new AndroidDriver(getAppiumServerUrl(), options);
     }
